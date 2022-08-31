@@ -1,0 +1,15 @@
+// ___________________________________________________________________
+// Button Styles
+// ___________________________________________________________________
+  
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+button {
+  @include rounded(50%);
+  background-color: $accent-color;
+  border: none;
+  margin-top: -2rem;
+  padding: 20px;
+  width: 4rem;
+}

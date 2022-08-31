@@ -1,0 +1,36 @@
+// ___________________________________________________________________
+// Global Config
+// ___________________________________________________________________
+
+@use '../utilities/mixins' as *;
+
+//Font Stack
+$font-family--primary: 'Manrope', sans-serif;
+
+// Font Weights
+$font-weight--bold: 800;
+
+// Primary Colors
+$light-cyan: #{'hsl(193, 38%, 86%)'};
+$neon-green: #{'hsl(150, 100%, 66%)'};
+$grayish-blue: #{'hsl(217, 19%, 24%)'};
+$dark-blue: #{'hsl(218, 23%, 16%)'};
+$mint-green: #{'hsl(150, 70%, 76%)'};
+
+// Color Usage
+$bg-color-primary: $dark-blue;
+$bg-color-card: $grayish-blue;
+$text-color-primary: $light-cyan;
+$accent-color: $neon-green;
+$link-color: $mint-green;
+
+// Text
+$text-L: pxToRem(28px);
+$text-M: pxToRem(24px);
+$text-S: pxToRem(13px);
+$text-XS: pxToRem(11px);
+
+// Line Height
+$line-height__default: 1.36;
+
+// Breakpoints

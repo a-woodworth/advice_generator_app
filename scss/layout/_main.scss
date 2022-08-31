@@ -1,0 +1,41 @@
+// ___________________________________________________________________
+// Main Section Styles
+// ___________________________________________________________________
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+figure {
+  @include rounded(10px);
+  background-color: $bg-color-card;
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  padding-inline: 1.5rem;
+}
+
+.advice__title {
+  margin-bottom: 1.5rem;
+  padding-top: 2.5rem;
+}
+
+.advice__quote p {
+  margin-bottom: 1.5rem;
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
+}
+
+.horizontal-rule {
+  padding-bottom: 4rem;
+}

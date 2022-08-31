@@ -16,12 +16,25 @@ figure {
   @include rounded(10px);
   background-color: $bg-color-card;
   box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 33.75rem;
   padding-inline: 1.5rem;
+
+  @media #{$brkpoint-md} {
+    @include rounded(15px);
+    padding-inline: 3rem;
+  }
 }
 
 .advice__title {
   margin-bottom: 1.5rem;
   padding-top: 2.5rem;
+
+  @media #{$brkpoint-md} {
+    padding-top: 3rem;
+  }
 }
 
 .advice__quote p {
@@ -34,8 +47,16 @@ figure {
   &::after {
     content: close-quote;
   }
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .horizontal-rule {
   padding-bottom: 4rem;
+
+  @media #{$brkpoint-md} {
+    padding-bottom: 4.5rem;
+  }
 }

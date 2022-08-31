@@ -40,11 +40,21 @@ h1 {
   @include text($text-XS, $font-weight--bold, $accent-color);
   letter-spacing: 3.45714px;
   text-transform: uppercase;
+
+  @media #{$brkpoint-md} {
+    font-size: $text-S;
+    letter-spacing: 4.08571px;
+  }
 }
 
 p {
   @include text($text-M, $font-weight--bold, $text-color-primary);
   letter-spacing: -0.26px;
+
+  @media #{$brkpoint-md} {
+    font-size: $text-L;
+    letter-spacing: -0.3px;
+  }
 }
 
 img {

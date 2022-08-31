@@ -9,7 +9,18 @@ button {
   @include rounded(50%);
   background-color: $accent-color;
   border: none;
+  cursor: pointer;
   margin-top: -2rem;
   padding: 20px;
   width: 4rem;
+
+  &:hover {
+    box-shadow: 0px 0px 40px #53FFAA;
+    transition: 0.25s ease-in;
+  }
+
+  &:focus {
+    outline: auto 2px Highlight; // for non-webkit browsers
+    outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
+  }
 }

@@ -4,9 +4,8 @@ const adviceQuote = document.querySelector('#advice-text');
 const diceBtn = document.querySelector('#new-advice');
 
 async function generateAdvice() {
-
-  adviceNumber.innerHTML = ` `;
-  adviceQuote.innerHTML = `Loading...`;
+  adviceNumber.innerText = ``;
+  adviceQuote.innerText = `Loading...`;
 
   try {
     const response = await fetch(adviceSlipURL);
@@ -22,8 +21,8 @@ async function generateAdvice() {
   }
 }
 
-generateAdvice();
+// Initial Advice Quote
+adviceNumber.innerText = `117`;
+adviceQuote.innerText = `It is easy to sit up and take notice, what's difficult is getting up and taking action.`;
 
-diceBtn.addEventListener('click', () => {
-  generateAdvice();
-});  
+diceBtn.addEventListener('click', generateAdvice);  

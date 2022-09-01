@@ -17,9 +17,7 @@ html {
 
 body,
 h1,
-figure,
-blockquote,
-p {
+blockquote {
   margin: 0;
   padding: 0;
 }
@@ -31,7 +29,7 @@ body {
 }
 
 h1,
-p {
+blockquote {
   line-height: $line-height__default;
   text-align: center;
 }
@@ -47,7 +45,7 @@ h1 {
   }
 }
 
-p {
+blockquote {
   @include text($text-M, $font-weight--bold, $text-color-primary);
   letter-spacing: -0.26px;
 

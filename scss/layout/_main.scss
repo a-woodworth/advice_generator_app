@@ -12,7 +12,7 @@ main {
   margin: auto;
 }
 
-figure {
+.advice__card {
   @include rounded(10px);
   background-color: $bg-color-card;
   box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
@@ -37,7 +37,7 @@ figure {
   }
 }
 
-.advice__quote p {
+.advice__quote {
   margin-bottom: 1.5rem;
 
   &::before {

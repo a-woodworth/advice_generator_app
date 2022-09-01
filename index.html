@@ -14,10 +14,12 @@
 
   <body class="container">
     <main>
-      <figure>
-        <h1 class="advice__title">Advice #<span class="advice__number" id="advice-id">117</span></h1>
-        <blockquote class="advice__quote">
-          <p id="advice-text">It is easy to sit up and take notice, what's difficult is getting up and taking action.</p>
+      <div class="advice__card">
+        <h1 class="advice__title">
+          Advice #<span class="advice__number" id="advice-id"><!-- Advice ID via JS --></span>
+        </h1>
+        <blockquote class="advice__quote" id="advice-text">
+          <!-- Advice quote via JS -->
         </blockquote>
         <img
           srcset="
@@ -32,7 +34,7 @@
           alt=""
           aria-hidden="true"
           class="horizontal-rule">
-      </figure>
+      </div>
       <button type="button" id="new-advice" aria-label="Get more advice">
         <img src="images/icon-dice.svg" alt="" aria-hidden="true">
       </button>
@@ -42,5 +44,6 @@
         <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/a-woodworth" target="_blank">a-woodworth</a>.</p>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

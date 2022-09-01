@@ -10,9 +10,7 @@ html {
 
 body,
 h1,
-figure,
-blockquote,
-p {
+blockquote {
   margin: 0;
   padding: 0;
 }
@@ -24,7 +22,7 @@ body {
 }
 
 h1,
-p {
+blockquote {
   line-height: 1.36;
   text-align: center;
 }
@@ -43,14 +41,14 @@ h1 {
   }
 }
 
-p {
+blockquote {
   font-size: 1.5rem;
   font-weight: 800;
   color: hsl(193, 38%, 86%);
   letter-spacing: -0.26px;
 }
 @media (min-width: 33.75rem) {
-  p {
+  blockquote {
     font-size: 1.75rem;
     letter-spacing: -0.3px;
   }
@@ -103,7 +101,7 @@ main {
   margin: auto;
 }
 
-figure {
+.advice__card {
   border-radius: 10px;
   background-color: hsl(217, 19%, 24%);
   box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
@@ -114,7 +112,7 @@ figure {
   padding-inline: 1.5rem;
 }
 @media (min-width: 33.75rem) {
-  figure {
+  .advice__card {
     border-radius: 15px;
     padding-inline: 3rem;
   }
@@ -130,17 +128,17 @@ figure {
   }
 }
 
-.advice__quote p {
+.advice__quote {
   margin-bottom: 1.5rem;
 }
-.advice__quote p::before {
+.advice__quote::before {
   content: open-quote;
 }
-.advice__quote p::after {
+.advice__quote::after {
   content: close-quote;
 }
 @media (min-width: 33.75rem) {
-  .advice__quote p {
+  .advice__quote {
     margin-bottom: 2.5rem;
   }
 }
@@ -168,5 +166,3 @@ figure {
 .attribution a:hover {
   color: hsl(150, 100%, 66%);
 }
-
-/*# sourceMappingURL=styles.css.map */

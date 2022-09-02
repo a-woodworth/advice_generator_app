@@ -8,7 +8,7 @@ async function generateAdvice() {
   adviceQuote.innerHTML = `Loading...`;
 
   try {
-    const response = await fetch(adviceSlipURL);
+    const response = await fetch(adviceSlipURL, {cache: 'no-store'});
     const data = await response.json();
 
     adviceNumber.innerHTML = `${data.slip.id}`;

@@ -27,7 +27,7 @@ Users should be able to:
 ![Mobile Sceenshot](/screenshot/mobile-screenshot-375px.png)
 
 ### Links
-- Solution URL: [Solution](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub/advice-generator-app-javascript-api-HuY-ftingY)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/advice-generator-app-javascript-api-HuY-ftingY)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/advice_generator_app/)
 
 ### Built with
